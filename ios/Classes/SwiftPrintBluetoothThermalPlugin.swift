@@ -320,7 +320,8 @@ public class SwiftPrintBluetoothThermalPlugin: NSObject, CBCentralManagerDelegat
                 let allowedCharacteristics = [
                     CBUUID(string: "00001101-0000-1000-8000-00805F9B34FB"), 
                     CBUUID(string: "49535343-8841-43F4-A8D4-ECBE34729BB3"), 
-                    CBUUID(string: "A76EB9E2-F3AC-4990-84CF-3A94D2426B2B")
+                    CBUUID(string: "A76EB9E2-F3AC-4990-84CF-3A94D2426B2B"),
+                    CBUUID(string: "FF02")
                 ]
 
                 if allowedCharacteristics.contains(characteristic.uuid) {
@@ -379,5 +380,6 @@ public class SwiftPrintBluetoothThermalPlugin: NSObject, CBCentralManagerDelegat
     }
 
 }
+
 
 
